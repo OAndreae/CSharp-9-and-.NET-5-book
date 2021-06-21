@@ -81,7 +81,6 @@ namespace Numbers
 
             bool happy = true;
             bool sad = false;
-
         }
     }
 }
