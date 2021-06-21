@@ -1,4 +1,4 @@
-#Exercise 1.1 - Test your knowledge
+# Exercise 1.1 - Test your knowledge
 - 1 A programmer can use different languages to write applications that run on .NET because all of the languages are compiled to the same Intermediate Language (IL) code. When the program is run, CoreCLR (Core Common Language Runtime, a virtual machine installed on the operating system) loads the IL code from the assembly and the just-in-time (JIT) compiler compiles it to native CPU instructions. These are then executed.
 - 2 To create a new command line application, type `dotnet new console`
 - 3 To build and run a program at the command prompt, type `dotnet run`
