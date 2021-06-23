@@ -7,9 +7,9 @@ namespace Exercise02
     {
         static void Main(string[] args)
         {
-            // type alignment
+            // alignment for byte column
             const int byteAl = -4;
-            // value alignment
+            // alignment for min and max value columns
             const int valAl = 30;
             WriteLine("-------------------------------------------------------------------------------");
             WriteLine($"Type         Byte(s) of memory {"Minimum", valAl-13} {"Maximum", valAl}");
