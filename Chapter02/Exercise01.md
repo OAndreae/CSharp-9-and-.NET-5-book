@@ -1,4 +1,4 @@
-#Exercise 2.1 - Test your knowledge
+# Exercise 2.1 - Test your knowledge
 Which type would you choose for the following "numbers?"
 1. Telephone number - `string`
 2. Height - `float` or `double`
