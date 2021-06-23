@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace Arguments
 {
@@ -6,7 +7,7 @@ namespace Arguments
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine($"There are {args.Length} arguments.");
         }
     }
 }
