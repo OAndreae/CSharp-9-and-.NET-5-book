@@ -22,7 +22,7 @@ namespace NullHandling
 
             int? thisCouldBeNull = null;
             Console.WriteLine(thisCouldBeNull); // outputs a blank line as value is null
-            Console.WriteLine(thisCouldBeNull.GetValueOrDefault());
+            Console.WriteLine(thisCouldBeNull.GetValueOrDefault()); // outputs 0 (the default value)
 
             thisCouldBeNull = 7;
             Console.WriteLine(thisCouldBeNull);
