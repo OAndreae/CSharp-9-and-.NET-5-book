@@ -8,21 +8,25 @@ namespace Exercise03
         static void Main(string[] args)
         {
             const int max = 100;
-            for (int n = 0; n < max; n++)
+            for (int n = 0; n <= max; n++)
             {
                 string message = n switch
                 {
                     int x when (x % 3 == 0) && (x % 5 == 0)
-                        => "fizzbuzz",
+                        => "FizzBuzz",
                     int x when (x % 3 == 0)
-                        => "fizz",
+                        => "Fizz",
                     int x when (x % 5 == 0)
-                        => "buzz",
+                        => "Buzz",
                     int x
                         => x.ToString()
                 };
 
-                WriteLine(message);
+                Write($"{message, -8} ");
+                if(n%10==0)
+                {
+                    WriteLine();
+                }
             }
         }
     }
