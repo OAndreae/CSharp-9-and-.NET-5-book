@@ -17,5 +17,5 @@ The three parts of a `for` statement are the initialiser, conditonal, and increm
  Yes, but it results in an infinite loop.
 #### 9. What does the underscoe _ represent in a switch expression?
 The default return value.
-10. What interface must an object implement to be enumerated over by using the `foreach` statement?
+#### 10. What interface must an object implement to be enumerated over by using the `foreach` statement?
 </br> An object must implement the `IEnumerable` interface.
