@@ -9,6 +9,7 @@ namespace CheckingForOverflow
         {
             try
             {
+                // throws an exception if a variable overflows at runtime
                 checked
                 {
                     int x = int.MaxValue - 1;
@@ -26,6 +27,7 @@ namespace CheckingForOverflow
                 WriteLine("The code overflowed but I caught the exception.");
             }
 
+            // prevents compile-time errors due to overflow of variables
             unchecked
             {
                 int y = int.MaxValue + 1;
