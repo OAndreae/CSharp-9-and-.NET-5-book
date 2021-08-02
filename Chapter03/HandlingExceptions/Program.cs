@@ -17,7 +17,7 @@ namespace HandlingExceptions
             }
             catch(OverflowException)
             {
-                WriteLine("Your age is a valid number format but it is either too large or too  small.");
+                WriteLine("Your age is a valid number format but it is either too large or too small.");
             }
             catch(FormatException)
             {
