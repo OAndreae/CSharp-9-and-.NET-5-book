@@ -10,17 +10,19 @@ namespace PrimeFactorsLib
         /// </summary>
         /// <param name="number">The number to decompose into prime factors</param>
         /// <returns>A list of prime factors e.g. 2 x 2 x 3</returns>
-        string PrimeFactors(int number)
+        public static string PrimeFactors(int number)
         {
             StringBuilder builder = new();
-            for (int i = 0; i < number; i++)
+            const int FIRST_PRIME = 2;
+            
+            for (int i = FIRST_PRIME; i < number; i++)
             {
                 // number is divisible by i
                 if (number % i == 0)
                 {
                     // start again from other pair
                     number = number / i;
-                    i = 2;
+                    i = FIRST_PRIME;
                     builder.Append($"{i} x ");
                 }
             }
