@@ -14,20 +14,24 @@ namespace PrimeFactorsLib
         {
             StringBuilder builder = new();
             const int FIRST_PRIME = 2;
-            
-            for (int i = FIRST_PRIME; i < number; i++)
+
+            for (int i = FIRST_PRIME; i <= number; i++)
             {
                 // number is divisible by i
                 if (number % i == 0)
                 {
                     // start again from other pair
                     number = number / i;
-                    i = FIRST_PRIME;
                     builder.Append($"{i} x ");
+                    i = FIRST_PRIME;
                 }
             }
             // Remove last three characters (' x ') from the string
-            builder.Length -= 3;
+            if (builder.Length >= 3)
+            {
+                builder.Length -= 3;
+            }
+
             return builder.ToString();
         }
     }
