@@ -1,5 +1,2 @@
 Debug is watching.
 Trace is watching.
-Trace error
-Trace warning
-Trace info
