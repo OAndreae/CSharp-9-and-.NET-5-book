@@ -15,7 +15,7 @@ namespace PrimeFactors
             {
                 Write("> ");
                 input = ReadLine();
-                if(input.ToUpper() != exitCmd.ToUpper())
+                if(input.ToUpper() == exitCmd.ToUpper())
                 {
                     return;
                 }
